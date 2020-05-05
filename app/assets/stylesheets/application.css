@@ -35,7 +35,6 @@
      background-size: 100%;
      position: relative;
      box-shadow: inset 60px 50px 60px black, inset -60px -50px 60px black;
-
 }
 
  .signup-form-container {
@@ -59,7 +58,6 @@
  
  .signup-form-box {
      position: absolute;
-     
      margin: auto;
      display: flex;
      flex-direction: column;
@@ -82,7 +80,6 @@
      margin-top: 10rem;
      justify-content: center;
  }
-
 
  #form-title {
      font-size: 3.5rem;
@@ -224,7 +221,7 @@
     justify-content: space-between;
 }
 
-.main-header {
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,6 +246,7 @@
     margin-left: 25px;
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-bar-left-genres {
@@ -256,6 +254,7 @@
     margin: 5px 15px;
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-bar-left-list {
@@ -263,6 +262,7 @@
     margin: 5px 15px;
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-bar-right {
@@ -278,6 +278,7 @@
     margin-left: 25px;
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-bar-right-logout {
@@ -287,4 +288,10 @@
     margin-left: 25px;
     font-size: 17px;
     font-weight: bold;
+    background-color: red;
+    border-radius: 3px;
+    height: 35px;
+    width: 95px;
+    text-align: center;
+    cursor: pointer;
 }

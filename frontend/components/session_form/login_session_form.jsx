@@ -51,7 +51,6 @@ class LoginSessionForm extends React.Component {
         )
     }
 
-    // Render a "Log in" or "Sign up" header based on the formType prop.
     render() {
         return (
             <div>

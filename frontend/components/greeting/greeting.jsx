@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Browse from '../browse/browse'
 
-const Greeting = ({ currentUser, logout }) => {
+const Greeting = ({ currentUser, logout, demoLogin }) => {
 
     const sessionLinks = () => (        // linking the user to sessions if they're not logged in
         <nav className="login-buttons">
             <div className="btn-demo">
-                <Link to="/browse" style={{ textDecoration: 'none', color: 'white' }}>Free Demo</Link>
+                <p onClick={demoLogin} >Free Demo</p>
             </div>
             <div className="btn-login">
                 <Link to="/login" style={{ textDecoration: 'none', color: 'white' }}>Login</Link>
@@ -16,9 +15,18 @@ const Greeting = ({ currentUser, logout }) => {
     );
 
     const personalGreeting = () => (    // if the user is signed in, render that page
-            <div>
-                <Link to="/browse" />
-                <button className="btn-login" onClick={logout}>Log Out</button>
+            <div className="nav-bar">
+                <div className="nav-bar-left">
+                    <img src="https://i.imgur.com/S48zVd3.png" alt="netflix-font" border="0" style={{ cursor: "pointer"}} />
+                    <p className="nav-bar-left-home">Home</p>
+                    <p className="nav-bar-left-genres">Genres</p>
+                    <p className="nav-bar-left-list">My List</p>
+                </div>
+                <div className="nav-bar-right">
+                    <p className="nav-bar-right-search"><i className="fa fa-search"></i></p>
+                <p className="nav-bar-right-logout" onClick={logout}>Logout </p>
+
+                </div>
             </div>
     );
     return currentUser ? personalGreeting() : sessionLinks() // Checking if the user is logged in or not

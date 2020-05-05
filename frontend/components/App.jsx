@@ -6,6 +6,8 @@ import {
     Link,
     HashRouter
 } from 'react-router-dom';
+import { AuthRoute, ProtectedRoute } from '../utils/route_util';
+
 
 import LoginFormContainer from "./session_form/login_form_container";
 import SignupFormContainer from "./session_form/signup_form_container";
@@ -19,9 +21,9 @@ const App = () => (
             </div>
         </header> */}
         <Switch>
-            <Route exact path="/" component={SignupFormContainer} />
-            <Route path="/login" component={LoginFormContainer} />
-            <Route path="/browse" component={Browse} />
+            <AuthRoute exact path="/" component={SignupFormContainer} />
+            <AuthRoute path="/login" component={LoginFormContainer} />
+            <ProtectedRoute path="/browse" component={Browse} />
         </Switch>
     </div>
 );

@@ -69,7 +69,7 @@ class SignupSessionForm extends React.Component {
                         <div className="logo">
                             <img src="https://fontmeme.com/permalink/200430/13edf491132c318b676c6df48723cb83.png" alt="netflix-font" border="0" />
                         </div>
-                    <GreetingContainer />
+                        <GreetingContainer />
                     </header>
                 <div className="showcase" >
                     <div className="signup-form-container">
