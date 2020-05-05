@@ -17,6 +17,7 @@ class Video < ApplicationRecord
     foreign_key: :video_id,
     class_name: :MyListItem
 
-    
+    has_one_attached :video
+    has_one_attached :photo
 
 end
