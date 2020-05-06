@@ -5,10 +5,8 @@ class Api::VideosController < ApplicationController
         render :index
     end
 
-    private
-
-    def video_params
-        params.require(:video).permit(:year, :title)
+    def show
+        @video = Video.find_by(id: params[:id])
     end
 
 
