@@ -11,14 +11,16 @@ import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 
 import LoginFormContainer from "./session_form/login_form_container";
 import SignupFormContainer from "./session_form/signup_form_container";
-import Browse from "./browse/browse";
+import BrowseContainer from "./browse/browse_container"
+import PlayVideoContainer from "./play_video/play_video_container"
 
 const App = () => (
     <div>
         <Switch>
             <AuthRoute exact path="/" component={SignupFormContainer} />
             <AuthRoute path="/login" component={LoginFormContainer} />
-            <ProtectedRoute path="/browse" component={Browse} />
+            <ProtectedRoute path="/browse" component={BrowseContainer} />
+            <ProtectedRoute path="/videos/:videoId" component={PlayVideoContainer} />
         </Switch>
     </div>
 );

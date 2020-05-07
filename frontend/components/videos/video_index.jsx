@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-redux-dom";
-// import VideoIndexItem from './video_index_item';
+import VideoIndexItem from './video_index_item';
 
 class VideoIndex extends React.Component {
 
@@ -24,18 +24,9 @@ class VideoIndex extends React.Component {
             <div>
                 <ul>
                     
-                    {videos.map(video => {
-                        return (
-                            <li key={video.id}>
-                                <h2>{video.title}</h2>
-                                <h3>{video.year}</h3>
-                                <img src={video.thumbnail} />
-                                <video width="320" height="240" controls>
-                                    <source src={video.music_video} type="video/mp4"/>                       
-                                </video>
-                            </li>
-                        );
-                    })}
+                    {videos.map((video, idx) => (
+                        <VideoIndexItem key={idx} video={video} />
+                    ))}
                 </ul>
             </div>
         )

@@ -24,7 +24,7 @@ const Greeting = ({ currentUser, logout, demoLogin }) => {
                 </div>
                 <div className="nav-bar-right">
                     <p className="nav-bar-right-search"><i className="fa fa-search"></i></p>
-                <p className="nav-bar-right-logout" onClick={logout}>Logout </p>
+                <p className="nav-bar-right-logout" onClick={logout}>Logout</p>
 
                 </div>
             </div>
