@@ -2,8 +2,8 @@ class Video < ApplicationRecord
 
     validates :title, presence: true
     validates :year, presence: true
-    # validates :genre_id, presence: true, uniqueness: true
-    # validates :artist_id, presence: true, uniqueness: true
+    validates :genre, presence: true
+    validates :artist, presence: true
 
     # belongs_to :artist,
     # foreign_key: :artist_id,

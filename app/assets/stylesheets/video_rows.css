@@ -1,0 +1,72 @@
+
+.main-video-box {
+    display: flex;
+}
+
+.main-video {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.row-videos {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-rock-videos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.row-pop-videos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.row-alternative-videos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.video-info {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.genre-title {
+    margin: 5px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 800;
+    border-width: 5px;
+}
+
+.video-hover {
+    /* overflow: hidden; */
+    width: 360px;
+    height: 270px;
+    margin-right: 15px;
+    transition: transform .2s;
+}
+
+.video-hover:hover {
+    transform: scale(1.25);
+}
+
+/* .video-title {
+}
+
+.video-year {
+
+}
+
+.video-artist {
+
+} */
