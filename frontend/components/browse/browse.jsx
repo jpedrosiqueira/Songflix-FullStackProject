@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 
 import GreetingContainer from "../greeting/greeting_container";
-import VideoIndexContainer from "../videos/video_index_container"
+import VideoIndexContainer from "../videos/video_index_container";
+import Footer from "../footer/footer";
 
 class Browse extends React.Component {
 
@@ -44,7 +45,9 @@ class Browse extends React.Component {
                 <div>
                     <VideoIndexContainer />
                 </div>
-                
+                <footer>
+                    <Footer />
+                </footer>
             </div>
         )
     }
