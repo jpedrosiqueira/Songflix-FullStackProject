@@ -45,17 +45,6 @@ class Browse extends React.Component {
                     <GreetingContainer />
                 </header>
 
-                {/* <div className="home-show-display">
-                    <video className="home-video" autoPlay width="100%" height="100%"
-                         src={this.props.videos.music_video} type="video/mp4"></video>
-                    <div className="random-video-title">
-                        {this.props.videos.title}
-                    </div>
-                    <Link to={`/videos/${this.props.videos.id}`}>
-                        <div className="play-button">Play</div>
-                    </Link>
-                </div> */}
-
                 <div>
                     <VideoIndexContainer />
                 </div>
