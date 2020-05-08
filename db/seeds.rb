@@ -20,7 +20,7 @@ require 'open-uri'
 
 the_less_i_know_the_better = Video.create!(title: "The less I know the better", year: 2015, genre: "alternative", artist: "Tame Impala")
 
-file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/tame-impala-less-you-know-the-better.mp4')
+file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/the-less-i-know-the-better.mp4')
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 the_less_i_know_the_better.music_video.attach(io: file, filename: 'the-less-i-know-the-better.jpg')
 
@@ -38,7 +38,7 @@ somebody_told_me.music_video.attach(io: file, filename: 'somebody-told-me.jpg')
 
 file_thumbnail_somebody_told_me = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/somebody-told-me-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-somebody_told_me.thumbnail.attach(io: file_thumbnail_somebody_told_me, filename: 'somebody-told-me-thumbnail.jpg')
+somebody_told_me.thumbnail.attach(io: file_thumbnail_somebody_told_me, filename: 'somebody-told-me-thumbnail.png')
 
 # -------- Starlight - Muse --------------------#
 
@@ -48,9 +48,9 @@ file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/starlight.mp4')
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 starlight.music_video.attach(io: file, filename: 'starlight.jpg')
 
-file_thumbnail_starlight = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/starlight-thumbnail.jpg')
+file_thumbnail_starlight = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/starlight-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-starlight.thumbnail.attach(io: file_thumbnail_starlight, filename: 'starlight-thumbnail.jpg')
+starlight.thumbnail.attach(io: file_thumbnail_starlight, filename: 'starlight-thumbnail.png')
 
 # -------- Take Me Out - Franz Ferdinand --------------------#
 
@@ -61,9 +61,9 @@ file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/take-me-out-franz
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 take_me_out.music_video.attach(io: file, filename: 'take-me-out.jpg')
 
-file_thumbnail_take_me_out = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/take-me-out-thumbnail.jpg')
+file_thumbnail_take_me_out = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/take-me-out-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-take_me_out.thumbnail.attach(io: file_thumbnail_take_me_out, filename: 'take-me-out-thumbnail.jpg')
+take_me_out.thumbnail.attach(io: file_thumbnail_take_me_out, filename: 'take-me-out-thumbnail.png')
 
 # -------- Dog days are over - Florence and the machine --------------------#
 
@@ -73,9 +73,9 @@ file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/dog-days-are-over
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 dog_days_are_over.music_video.attach(io: file, filename: 'dog-days-are-over.jpg')
 
-file_thumbnail_dog_days_are_over = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/dog-days-are-over-thumbnail.jpg')
+file_thumbnail_dog_days_are_over = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/dog-days-are-over-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-dog_days_are_over.thumbnail.attach(io: file_thumbnail_dog_days_are_over, filename: 'dog-days-are-over-thumbnail.jpg')
+dog_days_are_over.thumbnail.attach(io: file_thumbnail_dog_days_are_over, filename: 'dog-days-are-over-thumbnail.png')
 
 # -------- Little lion man - Mumford and sons --------------------#
 
@@ -85,9 +85,9 @@ file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/little-lion-man.m
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 little_lion_man.music_video.attach(io: file, filename: 'little-lion-man.jpg')
 
-file_thumbnail_little_lion_man = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/little-lion-man-thumbnail.jpg')
+file_thumbnail_little_lion_man = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/little-lion-man-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-little_lion_man.thumbnail.attach(io: file_thumbnail_little_lion_man, filename: 'little-lion-man-thumbnail.jpg')
+little_lion_man.thumbnail.attach(io: file_thumbnail_little_lion_man, filename: 'little-lion-man-thumbnail.png')
 
 
 # -------- Lost in yesterday - Tame Impala --------------------#
@@ -98,9 +98,9 @@ file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/lost-in-yesterday
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 lost_in_yesterday.music_video.attach(io: file, filename: 'lost-in-yesterday.jpg')
 
-file_thumbnail_lost_in_yesterday = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/lost-in-yesterday-thumbnail.jpg')
+file_thumbnail_lost_in_yesterday = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/lost-in-yesterday-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-lost_in_yesterday.thumbnail.attach(io: file_thumbnail_lost_in_yesterday, filename: 'lost-in-yesterday-thumbnail.jpg')
+lost_in_yesterday.thumbnail.attach(io: file_thumbnail_lost_in_yesterday, filename: 'lost-in-yesterday-thumbnail.png')
 
 # -------- Rolling in the deep - Adele --------------------#
 
@@ -110,9 +110,9 @@ file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/rolling-in-the-de
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 rolling_in_the_deep.music_video.attach(io: file, filename: 'rolling-in-the-deep.jpg')
 
-file_thumbnail_rolling_in_the_deep = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/rolling-in-the-deep-thumbnail.jpg')
+file_thumbnail_rolling_in_the_deep = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/rolling-in-the-deep-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-rolling_in_the_deep.thumbnail.attach(io: file_thumbnail_rolling_in_the_deep, filename: 'rolling-in-the-deep-thumbnail.jpg')
+rolling_in_the_deep.thumbnail.attach(io: file_thumbnail_rolling_in_the_deep, filename: 'rolling-in-the-deep-thumbnail.png')
 
 
 # -------- Uptown Funk - Bruno Mars --------------------#
@@ -123,9 +123,9 @@ file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/uptown-funk.mp4')
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 uptown_funk.music_video.attach(io: file, filename: 'uptown-funk.jpg')
 
-file_thumbnail_uptown_funk = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/uptown-funk-thumbnail.jpg')
+file_thumbnail_uptown_funk = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/uptown-funk-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-uptown_funk.thumbnail.attach(io: file_thumbnail_uptown_funk, filename: 'uptown-funk-thumbnail.jpg')
+uptown_funk.thumbnail.attach(io: file_thumbnail_uptown_funk, filename: 'uptown-funk-thumbnail.png')
 
 # -------- Doing Time - Lana del Rey --------------------#
 
@@ -135,6 +135,6 @@ file = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/doing-time.mp4')
 # grab the url from amazon from the video that you uploaded from youtube to your computer
 doing_time.music_video.attach(io: file, filename: 'doing-time.jpg')
 
-file_thumbnail_doing_time = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/doing-time-thumbnail.jpg')
+file_thumbnail_doing_time = open('https://songflix-seeds.s3-us-west-1.amazonaws.com/doing-time-thumbnail.png')
 # grab the url from amazon from the picture that i'll use as a thumbnail for that video
-doing_time.thumbnail.attach(io: file_thumbnail_doing_time, filename: 'doing-time-thumbnail.jpg')
+doing_time.thumbnail.attach(io: file_thumbnail_doing_time, filename: 'doing-time-thumbnail.png')

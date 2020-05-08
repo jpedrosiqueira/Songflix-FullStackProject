@@ -4,7 +4,7 @@
 }
 
 .main-video {
-    display: flex;
+    /* display: flex; */
     width: 100vw;
     height: 100vh;
     object-fit: fill;
@@ -35,7 +35,7 @@
 }
 
 .video-info {
-    font-size: 13px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
 }
@@ -60,13 +60,18 @@
     transform: scale(1.25);
 }
 
-/* .video-title {
+
+.video-info-title {
+    font-weight: bold;
 }
 
-.video-year {
-
+.video-info-value {
+    font-weight: normal;
 }
 
-.video-artist {
-
-} */
+.video-info-separator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 38px;
+}

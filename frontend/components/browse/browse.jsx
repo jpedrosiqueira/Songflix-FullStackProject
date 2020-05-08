@@ -34,11 +34,7 @@ class Browse extends React.Component {
 
     render() {
 
-        // if (this.props.videos.length === 0 || !this.props.videos) {
-        //     return(<div></div>);
-        // }
-        // const randomVideo = this.props.videos[Object.keys(this.props.videos)[Math.floor(Math.random() * Object.keys(this.props.videos).length)]];
-        // debugger
+        
         return (
             <div>
                 <header className="signup-header">

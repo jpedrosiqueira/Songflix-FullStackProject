@@ -40,9 +40,11 @@ class VideoIndex extends React.Component {
                         if (video.title === "The less I know the better") {
                             return (
                                 <div className="main-video">
-                                    <video muted={false} width="100%" height="100%" 
-                                        src={video.music_video} onMouseLeave={this.onLeaveMainVideo} onMouseOver={this.onHoverPlay}
-                                        type="video/mp4" autoPlay></video>
+                                    <Link to={`videos/${video.id}`}>
+                                        <video muted={false} width="100%" height="100%" 
+                                            src={video.music_video} onMouseLeave={this.onLeaveMainVideo} onMouseOver={this.onHoverPlay}
+                                            type="video/mp4" autoPlay></video>
+                                    </Link>
                                 </div>
                             )
                           }
@@ -70,9 +72,11 @@ class VideoIndex extends React.Component {
                                         </video>
                                     </Link>
                                     <div className="video-info">
-                                        <span className="video-title">{video.title}</span>
-                                        <span className="video-year">{video.year}</span>
-                                        <span className="video-artist">{video.artist}</span>
+                                        <div className="video-info-separator">
+                                            <div className="video-info-title">Song: <span className="video-info-value">{video.title}</span></div>
+                                            <div className="video-info-title">Year: <span className="video-info-value">{video.year}</span></div>
+                                        </div>
+                                        <div className="video-info-title">Artist: <span className="video-info-value">{video.artist}</span></div>
                                     </div>
                                 </div>
                             )
@@ -98,9 +102,11 @@ class VideoIndex extends React.Component {
                                         </video>
                                     </Link>
                                         <div className="video-info">
-                                            <span className="video-title">Song: {video.title}</span>
-                                            <span className="video-artist">Artist: {video.artist}</span>
-                                            <span className="video-year">Year: {video.year}</span>
+                                            <div className="video-info-separator">
+                                                <div className="video-info-title">Song: <span className="video-info-value">{video.title}</span></div>
+                                                <div className="video-info-title">Year: <span className="video-info-value">{video.year}</span></div>
+                                            </div>
+                                            <div className="video-info-title">Artist: <span className="video-info-value">{video.artist}</span></div>
                                         </div>
                                 </div>
                          )
@@ -125,11 +131,13 @@ class VideoIndex extends React.Component {
                                             <source src={video.music_video} type="video/mp4" />
                                         </video>
                                     </Link>
-                                        <div className="video-info">
-                                            <span className="video-title">{video.title}</span>
-                                            <span className="video-year">{video.year}</span>
-                                            <span className="video-artist">{video.artist}</span>
+                                    <div className="video-info">
+                                        <div className="video-info-separator">
+                                            <div className="video-info-title">Song: <span className="video-info-value">{video.title}</span></div>
+                                            <div className="video-info-title">Year: <span className="video-info-value">{video.year}</span></div>
                                         </div>
+                                        <div className="video-info-title">Artist: <span className="video-info-value">{video.artist}</span></div>
+                                    </div>
                                 </div>
                          )}
                          
