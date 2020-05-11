@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Songflix is a clone of one of the biggest streaming service web app Neflix, except that the user can watch music videos and concerts, as opposed to movies and TV shows.
 
-Things you may want to cover:
+# Live site demo
+* Demo: [Link](https://songflix.herokuapp.com/#/)
 
-* Ruby version
+# Technologies
+* This web app was made using PostgreSQL to handle the backend database, Ruby on Rails for the backend, React/Redux for the frontend, CSS3 for styling, and Amazon AWS S3 to store images and videos. The website was deployed using Heroku.
 
-* System dependencies
+# MVPs
+* Displaying videos and hovering over them
+* Search Bar 
+* Displaying videos by genre
+* My List 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
