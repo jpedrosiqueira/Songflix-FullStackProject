@@ -39,7 +39,7 @@ class VideoIndex extends React.Component {
                         // Main video that will be displayed
                         if (video.title === "The less I know the better") {
                             return (
-                                <div className="main-video">
+                                <div className="main-video" key={idx}>
                                     <Link to={`videos/${video.id}`}>
                                         <video muted={false} width="100%" height="100%" 
                                             src={video.music_video} onMouseLeave={this.onLeaveMainVideo} onMouseOver={this.onHoverPlay}
@@ -59,11 +59,11 @@ class VideoIndex extends React.Component {
                             </div>
                     <div className="row-rock-videos">
                     
-                        {videos.map((video) => {
+                        {videos.map((video, idx) => {
                         // Row for rock videos
                         if (video.genre === "rock") {
                             return (
-                                <div>
+                                <div key={idx}>
                                     
                                     <Link to={`/videos/${video.id}`}>
                                         <video className="video-hover" width="360" poster={video.thumbnail} height="270" muted={false} controls={false} 
@@ -94,7 +94,7 @@ class VideoIndex extends React.Component {
                         //  Row for alternative videos 
                         if (video.genre === "alternative" && video.title !== "The less I know the better") {
                             return (
-                                <div>
+                                <div key={idx}>
                                     <Link to={`/videos/${video.id}`}>
                                         <video className="video-hover" width="400" poster={video.thumbnail} height="440" muted={false} controls={false} 
                                             onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
@@ -124,7 +124,7 @@ class VideoIndex extends React.Component {
 
                         if (video.genre === "pop") {
                             return (
-                                <div>
+                                <div key={idx}>
                                     <Link to={`/videos/${video.id}`}>
                                         <video className="video-hover" width="500" poster={video.thumbnail} height="500" muted={false} controls={false} 
                                             onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >

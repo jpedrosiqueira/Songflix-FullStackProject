@@ -19,7 +19,7 @@ class PlayVideo extends React.Component {
                 <Link to="/browse">
                     <div className="back-to-browse">
                         <div className="back-to-browse-icon">
-                            <i class="fa fa-arrow-left"></i>
+                            <i className="fa fa-arrow-left"></i>
                             <div className="back-to-browse-message">
                                 Back to Browse
                             </div>

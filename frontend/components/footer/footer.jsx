@@ -12,11 +12,11 @@ class Footer extends React.Component {
                 </a>
 
                 <a href="https://www.linkedin.com/in/jpedrosiqueira/" className="social-media-link">
-                       <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                       <i className="fa fa-linkedin fa-3x" ></i>
                 </a>
 
                 <a href="mailto:johnpedrosiqueira@gmail.com" className="social-media-link">
-                       <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                       <i className="fa fa-envelope fa-3x" ></i>
                 </a>
             </div>
             <div className="footer-text-box">
@@ -37,7 +37,7 @@ class Footer extends React.Component {
                 </ul>
             </div>
             <div className="footer-creator">
-                Designed by Pedro Siqueira
+                Created by Pedro Siqueira
             </div>
 
         </footer>

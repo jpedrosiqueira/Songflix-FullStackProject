@@ -75,3 +75,23 @@
     justify-content: space-between;
     margin-right: 38px;
 }
+
+.grid-container {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+.video-hover-catalog {
+    /* overflow: hidden; */
+    display: flex;
+    width: 270px;
+    height: 180px;
+    transition: transform .2s;
+}
+
+.video-hover-catalog:hover {
+    transform: scale(1.15);
+}
