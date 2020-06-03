@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { requestVideos } from '../../actions/video_actions' // action creator
-import Catalog from './catalog'; // presentational component to connect
+import Search from './search'; // presentational component to connect
 
 const mapStateToProps = (state) => { // map slice of state to props object
     return ({
@@ -12,4 +12,4 @@ const mapDispatchToProps = (dispatch) => ({ // create action dispatcher
     requestVideos: () => dispatch(requestVideos())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Catalog);
+export default connect(mapStateToProps, mapDispatchToProps)(Search);

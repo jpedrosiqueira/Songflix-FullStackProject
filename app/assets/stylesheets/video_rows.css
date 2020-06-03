@@ -46,6 +46,7 @@
     font-size: 25px;
     font-weight: 800;
     border-width: 5px;
+    margin-top: 6rem;
 }
 
 .video-hover {
@@ -76,8 +77,16 @@
     margin-right: 38px;
 }
 
-.grid-container {
+.grid-container-search {
     margin-top: 100px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-container {
+    margin-left: 1rem;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: auto auto auto auto auto;

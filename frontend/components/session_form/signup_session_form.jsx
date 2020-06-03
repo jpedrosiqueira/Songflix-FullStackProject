@@ -1,5 +1,5 @@
 import React from 'react';
-import GreetingContainer from "../greeting/greeting_container"
+import NavBarContainer from "../navbar/navbar_container"
 
  
 // The SessionForm component should be responsible for a number of tasks:
@@ -69,7 +69,7 @@ class SignupSessionForm extends React.Component {
                         <div className="logo">
                             <img src="https://fontmeme.com/permalink/200430/13edf491132c318b676c6df48723cb83.png" alt="netflix-font" border="0" />
                         </div>
-                        <GreetingContainer />
+                        <NavBarContainer />
                     </header>
                 <div className="showcase" >
                     <div className="signup-form-container">

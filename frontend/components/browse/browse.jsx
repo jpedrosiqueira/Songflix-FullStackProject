@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-import GreetingContainer from "../greeting/greeting_container";
+import NavBarContainer from "../navbar/navbar_container";
 import VideoIndexContainer from "../videos/video_index_container";
 import Footer from "../footer/footer";
 
@@ -39,7 +39,7 @@ class Browse extends React.Component {
         return (
             <div>
                 <header className="signup-header">
-                    <GreetingContainer />
+                    <NavBarContainer />
                 </header>
 
                 <div>

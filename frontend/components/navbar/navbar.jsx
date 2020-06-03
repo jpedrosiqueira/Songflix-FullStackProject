@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Greeting = ({ currentUser, logout, demoLogin }) => {
+const NavBar = ({ currentUser, logout, demoLogin }) => {
 
     const sessionLinks = () => (        // linking the user to sessions if they're not logged in
         <nav className="login-buttons">
@@ -14,7 +14,7 @@ const Greeting = ({ currentUser, logout, demoLogin }) => {
         </nav>
     );
 
-    const personalGreeting = () => (    // if the user is signed in, render that page
+    const personalNavBar = () => (    // if the user is signed in, render that page
             <div className="nav-bar">
                 <div className="nav-bar-left">
                     <Link to="/browse">
@@ -23,7 +23,19 @@ const Greeting = ({ currentUser, logout, demoLogin }) => {
                     <Link to="/browse" style={{ textDecoration: "none" }}>
                         <p className="nav-bar-left-home">Home</p>
                     </Link>
-                    <p className="nav-bar-left-genres">Genres</p>
+                    {/* <p className="nav-bar-left-genres">Genres</p> */}
+
+
+                    <div class="dropdown">
+                        <button class="dropbtn-genres">Genres</button>
+                        <div class="dropdown-content">
+                            <Link to="/genres/rock" className="item-content">Rock</Link>
+                            <Link to="/genres/alternative" className="item-content">Alternative</Link>
+                            <Link to="/genres/pop" className="item-content">Pop</Link>
+                        </div>
+                    </div>
+
+
                     <p className="nav-bar-left-list">My List</p>
                 </div>
             
@@ -36,7 +48,7 @@ const Greeting = ({ currentUser, logout, demoLogin }) => {
                 </div>
             </div>
     );
-    return currentUser ? personalGreeting() : sessionLinks() // Checking if the user is logged in or not
+    return currentUser ? personalNavBar() : sessionLinks() // Checking if the user is logged in or not
 }
 
-export default Greeting;
+export default NavBar;
