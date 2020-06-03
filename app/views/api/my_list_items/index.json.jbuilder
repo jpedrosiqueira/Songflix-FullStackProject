@@ -1,0 +1,1 @@
+json.myListItemId @my_list_items.pluck(:id)
