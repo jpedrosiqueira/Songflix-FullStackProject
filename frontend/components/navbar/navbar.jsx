@@ -26,9 +26,9 @@ const NavBar = ({ currentUser, logout, demoLogin }) => {
                     {/* <p className="nav-bar-left-genres">Genres</p> */}
 
 
-                    <div class="dropdown">
-                        <button class="dropbtn-genres">Genres</button>
-                        <div class="dropdown-content">
+                    <div className="dropdown">
+                        <button className="dropbtn-genres">Genres</button>
+                        <div className="dropdown-content">
                             <Link to="/genres/rock" className="item-content">Rock</Link>
                             <Link to="/genres/alternative" className="item-content">Alternative</Link>
                             <Link to="/genres/pop" className="item-content">Pop</Link>
@@ -36,7 +36,7 @@ const NavBar = ({ currentUser, logout, demoLogin }) => {
                     </div>
 
 
-                    <p className="nav-bar-left-list">My List</p>
+                    <Link to="/mylist" style={{ textDecoration:"none" }} className="nav-bar-left-list">My List</Link>
                 </div>
             
                 <div className="nav-bar-right">

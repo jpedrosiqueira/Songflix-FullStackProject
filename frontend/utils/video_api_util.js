@@ -11,3 +11,11 @@ export const fetchVideo = videoId => (
         url: `api/videos/${videoId}`
     })
 );
+
+export const fetchMyListItems = () => (
+    $.ajax({
+        method: 'GET',
+        url: `api/videos/mylist`
+    })
+);
+

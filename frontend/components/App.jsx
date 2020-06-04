@@ -17,6 +17,7 @@ import SearchContainer from "./search/search_container";
 import RockContainer from "./genres/rock_container";
 import AlternativeContainer from "./genres/alternative_container";
 import PopContainer from "./genres/pop_container";
+import MyListIndexContainer from "../components/my_list/my_list_index_container";
 
 const App = () => (
     <div>
@@ -29,6 +30,7 @@ const App = () => (
             <ProtectedRoute path="/genres/rock" component={RockContainer} />
             <ProtectedRoute path="/genres/alternative" component={AlternativeContainer} />
             <ProtectedRoute path="/genres/pop" component={PopContainer} />
+            <ProtectedRoute path="/mylist" component={MyListIndexContainer} />
         </Switch>
     </div>
 );

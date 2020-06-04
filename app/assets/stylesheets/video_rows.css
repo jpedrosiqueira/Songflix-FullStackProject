@@ -1,4 +1,8 @@
 
+.main-video-container {
+    position: relative;
+}
+
 .main-video-box {
     display: flex;
 }
@@ -59,6 +63,20 @@
 
 .video-hover:hover {
     transform: scale(1.25);
+}
+
+.list-index-button {
+    margin-left: -64px;
+    margin-top: 180px;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(133, 133, 133, 0.6);
+    border-radius: 50%;
+    border: 1.8px solid white;
+    position: absolute;
+    /* display: none; */
 }
 
 

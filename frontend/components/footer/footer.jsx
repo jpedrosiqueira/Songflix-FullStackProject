@@ -22,7 +22,7 @@ class Footer extends React.Component {
             <div className="footer-text-box">
                 <h2 className="footer-title">Web app description</h2>
                 <p className="footer-description">
-                    This project is a clone of one of the biggest streaming service web app Neflix, except that the user can watch music videos and concerts, as opposed to movies and TV shows.
+                    This project mirrors on Netflix, one of the biggest streaming services in the world, except that the user can watch music videos and concerts, as opposed to movies and TV shows.
                 </p>
                 <h2 className="footer-title">Technologies</h2>
                 <ul className="footer-ul-topics">

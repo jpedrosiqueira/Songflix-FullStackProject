@@ -64,13 +64,16 @@ class VideoIndex extends React.Component {
                         if (video.genre === "rock") {
                             return (
                                 <div key={idx}>
-                                    
-                                    <Link to={`/videos/${video.id}`}>
-                                        <video className="video-hover" width="360" poster={video.thumbnail} height="270" muted={false} controls={false} 
-                                            onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
-                                            <source src={video.music_video} type="video/mp4" />
-                                        </video>
-                                    </Link>
+                                    <div className="video-hover">
+                                        <Link to={`/videos/${video.id}`}>
+                                            <video width="360" poster={video.thumbnail} height="270" muted={false} controls={false} 
+                                                onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
+                                                <source src={video.music_video} type="video/mp4" />
+                                            </video>
+
+                                        </Link>
+                                        <button className="list-index-button" ><i className="fas fa-check"></i></button>
+                                    </div>
                                     <div className="video-info">
                                         <div className="video-info-separator">
                                             <div className="video-info-title">Song: <span className="video-info-value">{video.title}</span></div>

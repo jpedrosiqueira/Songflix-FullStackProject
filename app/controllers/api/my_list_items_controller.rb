@@ -1,5 +1,7 @@
 class Api::MyListItemsController < ApplicationController
 
+    before_action :logged_in?
+
     def index
         @my_list_items = current_user.videos
         if @my_list_items
@@ -11,7 +13,7 @@ class Api::MyListItemsController < ApplicationController
 
     def create
         my_list_item = MyListItem.new(user_id: current_user.id, video_id: params[:video_id])
-        if list_video.save
+        if my_list_item.save
             @my_list_items = current_user.videos
             render :index
         else

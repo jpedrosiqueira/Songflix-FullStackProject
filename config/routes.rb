@@ -5,7 +5,11 @@ Rails.application.routes.draw do
     resource :user, only: [:create]
     resource :session, only: [:create, :destroy, :show]
     resources :my_list_items, only: [:index, :create, :destroy]
-    resources :videos, only: [:index, :show]
+    resources :videos, only: [:index, :show] do
+      collection do
+        get 'mylist'
+      end
+    end
   end
 
   root "static_pages#root"
