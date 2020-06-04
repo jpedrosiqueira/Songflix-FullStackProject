@@ -1,6 +1,6 @@
 import React from "react";
 import NavBarContainer from "../navbar/navbar_container";
-import VideoIndexContainer from "../videos/video_index_container";
+import VideoItemContainer from "../videos/video_item_container";
 
 class MyListIndex extends React.Component {
     constructor(props){
@@ -27,9 +27,9 @@ class MyListIndex extends React.Component {
 
     render() {
         const { videos, errors } = this.props;
-
+        // debugger
         let allVideos = videos.map((video, key) => {
-            return <VideoIndexContainer video={video} key={key} />
+            return <VideoItemContainer video={video} key={key} />
         })
 
         return errors.length === 0 ? (

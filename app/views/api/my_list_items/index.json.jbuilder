@@ -1,1 +1,1 @@
-json.myListItemIds @my_list_items.pluck(:id)
+json.listVideoIds @my_list_items.pluck(:id)

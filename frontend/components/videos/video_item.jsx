@@ -12,15 +12,14 @@ class VideoItem extends React.Component {
 
     handleList() {
         const { onlist, video, addToMyList, removeFromMyList } = this.props;
-
         return (e) => {
             e.preventDefault();
 
             if (onlist) {
                 removeFromMyList(video.id);
-                if (this.props.location.startsWith("/mylist")) {
-                    this.props.location.push("/mylist");
-                }
+                // if (this.props.location.pathname === "/mylist") {
+                //     this.props.history.push("/mylist");
+                // }
 
             } else {
                 addToMyList(video.id)
