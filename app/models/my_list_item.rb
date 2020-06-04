@@ -1,7 +1,6 @@
 class MyListItem < ApplicationRecord
 
-    validates :user_id, presence: true, uniqueness: true
-    validates :video_id, presence: true, uniqueness: true
+    validates :user_id, :video_id, presence: true
 
     belongs_to :user,
     foreign_key: :user_id,
