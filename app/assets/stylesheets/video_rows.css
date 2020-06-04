@@ -55,8 +55,8 @@
 
 .video-hover {
     /* overflow: hidden; */
-    width: 360px;
-    height: 270px;
+    width: 270px;
+    height: 180px;
     margin-right: 15px;
     transition: transform .2s;
 }
@@ -67,7 +67,7 @@
 
 .list-index-button {
     margin-left: -64px;
-    margin-top: 180px;
+    margin-top: 118px;
     height: 2.5rem;
     width: 2.5rem;
     font-size: 1.5rem;

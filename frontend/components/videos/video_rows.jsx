@@ -13,19 +13,19 @@ class VideoRows extends React.Component {
 
         allRock = videos.map((video, key) => {
             if (video.genre === "rock") {
-                return <VideoItemContainer video={video} key={key} />
+                return <VideoItemContainer className="video-hover" video={video} key={key} />
             }
         })
 
         allAlternative = videos.map((video, key) => {
             if (video.genre === "alternative" && video.title !== "The less I know the better") {
-                return <VideoItemContainer video={video} key={key} />
+                return <VideoItemContainer className="video-hover" video={video} key={key} />
             }
         })
 
         allPop = videos.map((video, key) => {
             if (video.genre === "pop") {
-                return <VideoItemContainer video={video} key={key} />
+                return <VideoItemContainer className="video-hover" video={video} key={key} />
             }
         })
 

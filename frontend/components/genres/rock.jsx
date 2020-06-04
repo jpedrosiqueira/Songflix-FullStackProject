@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import NavBarContainer from "../navbar/navbar_container";
+import VideoItemContainer from "../videos/video_item_container";
 
 
 class Rock extends React.Component {
@@ -52,8 +53,8 @@ class Rock extends React.Component {
                                 if (video.genre === "rock") {
                                 return (
                                     <div key={idx}>
-
-                                        <Link to={`/videos/${video.id}`}>
+                                        <VideoItemContainer video={video} key={idx} />
+                                        {/* <Link to={`/videos/${video.id}`}>
                                             <video className="video-hover-catalog" poster={video.thumbnail} muted={false} controls={false}
                                                 onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
                                                 <source src={video.music_video} type="video/mp4" />
@@ -65,7 +66,7 @@ class Rock extends React.Component {
                                                 <div className="video-info-title">Year: <span className="video-info-value">{video.year}</span></div>
                                             </div>
                                             <div className="video-info-title">Artist: <span className="video-info-value">{video.artist}</span></div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 )
                             }})}

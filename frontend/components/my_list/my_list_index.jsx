@@ -26,18 +26,24 @@ class MyListIndex extends React.Component {
     }
 
     render() {
-        const { videos, errors } = this.props;
+        const { videos } = this.props;
         // debugger
         let allVideos = videos.map((video, key) => {
-            return <VideoItemContainer video={video} key={key} />
+            return (
+                <VideoItemContainer video={video} key={key} />
+            )
         })
 
-        return errors.length === 0 ? (
+        return allVideos.length !== 0 ? (
             <div>
                 <header>
                     <NavBarContainer />
                 </header>
-                <div>
+                <div className="genre-title">
+                    <br></br>
+                        My List
+                </div>
+                <div className="grid-container">
                     {allVideos}
                 </div>
             </div>
@@ -46,9 +52,11 @@ class MyListIndex extends React.Component {
                 <header>
                     <NavBarContainer />
                 </header>
-                <div>
-                    No videos
+                <div className="genre-title">
+                    <br></br>
+                        My List
                 </div>
+                <div className="error-message">You haven't added any videos to your list yet.</div>
             </div>
         )
 

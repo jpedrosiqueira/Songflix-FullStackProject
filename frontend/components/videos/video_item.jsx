@@ -17,9 +17,9 @@ class VideoItem extends React.Component {
 
             if (onlist) {
                 removeFromMyList(video.id);
-                // if (this.props.location.pathname === "/mylist") {
-                //     this.props.history.push("/mylist");
-                // }
+                if (this.props.location.pathname.startsWith("/mylist")) {
+                    this.props.history.push("/mylist");
+                }
 
             } else {
                 addToMyList(video.id)
@@ -27,6 +27,17 @@ class VideoItem extends React.Component {
 
         }
     }
+
+    onHoverPlay(e) {
+        e.currentTarget.play();
+    }
+
+    onLeave(e) {
+        e.currentTarget.pause();
+        e.currentTarget.currentTime = 0;
+        e.currentTarget.load();
+    }
+
 
     render() {
         const { key, video, onlist } = this.props;
@@ -37,7 +48,7 @@ class VideoItem extends React.Component {
             <div key={key}>
 
                 <Link to={`/videos/${video.id}`}>
-                    <video className="video-hover" width="360" poster={video.thumbnail} height="270" muted={false} controls={false}
+                    <video className="video-hover" poster={video.thumbnail} muted={false} controls={false}
                         onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
                         <source src={video.music_video} type="video/mp4" />
                     </video>

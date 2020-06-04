@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import NavBarContainer from "../navbar/navbar_container";
+import VideoItemContainer from "../videos/video_item_container";
+
 
 class Search extends React.Component {
 
@@ -20,9 +22,9 @@ class Search extends React.Component {
         this.props.requestVideos();
     }
 
-    // componentDidUpdate(){
-    //     this.props.requestVideos();
-    // }
+    componentDidUpdate(){
+        this.props.requestVideos();
+    }
 
     onHoverPlay(e) {
         e.currentTarget.play();
@@ -86,8 +88,9 @@ class Search extends React.Component {
 
                             return (
                                 <div key={idx}>
+                                    <VideoItemContainer video={video} key={idx} />
 
-                                    <Link to={`/videos/${video.id}`}>
+                                    {/* <Link to={`/videos/${video.id}`}>
                                         <video className="video-hover-catalog" poster={video.thumbnail} muted={false} controls={false}
                                             onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
                                             <source src={video.music_video} type="video/mp4" />
@@ -99,7 +102,7 @@ class Search extends React.Component {
                                             <div className="video-info-title">Year: <span className="video-info-value">{video.year}</span></div>
                                         </div>
                                         <div className="video-info-title">Artist: <span className="video-info-value">{video.artist}</span></div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             )
                     })}
