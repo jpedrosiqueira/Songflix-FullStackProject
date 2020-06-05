@@ -33,21 +33,21 @@ class VideoRows extends React.Component {
             <div className="row-videos">
                 {/* Rows for each genre */}
 
-                <div className="genre-title">
+                <div className="genre-title-row">
                     <br></br>
                             Rock
                 </div>
                 <div className="row-rock-videos">
                     {allRock}
                 </div>
-                <div className="genre-title">
+                <div className="genre-title-row">
                     <br></br>
                             Alternative
                 </div>
                 <div className="row-alternative-videos">
                     {allAlternative}
                 </div>
-                <div className="genre-title">
+                <div className="genre-title-row">
                     <br></br>
                             Pop
                 </div>

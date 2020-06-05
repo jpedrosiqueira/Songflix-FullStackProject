@@ -15,6 +15,7 @@
     padding: 3px 3px 3px 9px;
     color: white;
     width: 300px;
+    position: fixed;
 }
 
 .error-message {

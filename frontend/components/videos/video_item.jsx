@@ -48,11 +48,13 @@ class VideoItem extends React.Component {
             <div key={key}>
 
                 <Link to={`/videos/${video.id}`}>
-                    <video className="video-hover" poster={video.thumbnail} muted={false} controls={false}
-                        onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
-                        <source src={video.music_video} type="video/mp4" />
-                    </video>
-                    <button className="list-index-button" onClick={this.handleList(video.id)}>{listButton}</button>
+                        <div className="video-item-container">
+                            <video className="video-hover" poster={video.thumbnail} muted={false} controls={false}
+                                onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
+                                <source src={video.music_video} type="video/mp4" />
+                            </video>
+                            <button className="list-index-button" onClick={this.handleList(video.id)}>{listButton}</button>
+                        </div>
                 </Link>
                 <div className="video-info">
                     <div className="video-info-separator">

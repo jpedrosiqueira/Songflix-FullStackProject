@@ -65,10 +65,10 @@ class VideoMain extends React.Component {
 
         const audio = muted ?
             (<button className="mute-button" onClick={this.toggleMute}>
-                <i className="fas fa-volume-mute"></i>
+                <i className="fas fa-volume-up"></i>
             </button>) : (
                 <button className="mute-button" onClick={this.toggleMute}>
-                    <i className="fas fa-volume-up"></i>
+                    <i className="fas fa-volume-mute"></i>
                 </button>
             )
         
@@ -77,15 +77,19 @@ class VideoMain extends React.Component {
         const mainVideo = videos.map((video, idx) => {
             if (video.title === "The less I know the better") {
             return (
-                <div className="main-video-box" key={idx}>
-                    <div className="main-video" >
-                        <Link to={`videos/${video.id}`}>
-                            <video muted={false} width="100%" height="100%"
-                                src={video.music_video} onMouseLeave={this.onLeaveMainVideo} onMouseOver={this.onHoverPlay}
-                                type="video/mp4" autoPlay></video>
-                            <button className="list-index-button" onClick={this.handleList(video.id)}>{listButton}</button>
-                        </Link>
+                <div>
+                    <div className="main-video-box" key={idx}>
+                        <p className="main-video-title">{video.title}</p>
+                        <p className="main-video-details">Artist: {video.artist}</p>
+                        <p className="main-video-details">Year: {video.year}</p>
+                        <div className="main-video-buttons">
+                            <button className="main-video-play-button"><Link to={`videos/${video.id}`}> <i className="fas fa-play video-div"></i>&nbsp;&nbsp; Play</Link></button> 
+                            <button className="main-video-list-button" onClick={this.handleList(video.id)}><div>{listButton} &nbsp; My List</div></button>
+                        </div>
+                            
                     </div>
+                    <video className="main-video" muted={false} width="100%" height="100%" src={video.music_video}  onMouseOver={this.onHoverPlay}
+                       loop type="video/mp4" autoPlay></video>
                 </div>
                     )
                     }}
