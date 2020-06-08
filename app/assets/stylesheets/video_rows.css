@@ -60,7 +60,7 @@
     height: 180px;
     margin-right: 15px;
     transition: transform .2s;
-    /* position: relative; */
+    position: relative;
 }
 
 .video-hover:hover {
@@ -81,6 +81,7 @@
     position: absolute;
     /* display: none; */
     visibility: hidden;
+    z-index: 102;
 }
 
 
@@ -117,9 +118,8 @@
 
 
 
-.video-item-container video{
+.video-item-container {
     position: relative;
-    /* z-index: auto; */
 }
 
 .video-item-container:hover > .list-index-button {
