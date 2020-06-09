@@ -1,4 +1,6 @@
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+
 import VideoItem from "./video_item";
 import { clearVideos, fetchMyListItems } from "../../actions/video_actions";
 import { addToMyList, removeFromMyList } from "../../actions/my_list_item_actions";
@@ -11,7 +13,6 @@ const mapStateToProps = (state, ownProps) => {
     return {
         users,
         currentUserId,
-        videos: Object.values(state.entities.videos),
         errors: state.errors.list,
         onlist,
     }
@@ -26,4 +27,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(VideoItem)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(VideoItem));

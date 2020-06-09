@@ -22,9 +22,6 @@ class Search extends React.Component {
         this.props.requestVideos();
     }
 
-    componentDidUpdate(){
-        this.props.requestVideos();
-    }
 
     onHoverPlay(e) {
         e.currentTarget.play();
@@ -44,11 +41,11 @@ class Search extends React.Component {
 
         const { videos } = this.props;
         let filteredVideos = videos.filter(video => {
+
             return (
                 (video.title.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1) || (video.artist.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1)
             )
         })
-
         if (filteredVideos.length === 0) {
             return (
                 <div>
@@ -68,7 +65,7 @@ class Search extends React.Component {
                 </div>
             )
         } else {
-
+        
         return (
             <div>
                 <header style={{ display:"flex" }}>
@@ -89,20 +86,6 @@ class Search extends React.Component {
                             return (
                                 <div key={idx}>
                                     <VideoItemContainer video={video} key={idx} />
-
-                                    {/* <Link to={`/videos/${video.id}`}>
-                                        <video className="video-hover-catalog" poster={video.thumbnail} muted={false} controls={false}
-                                            onMouseOver={this.onHoverPlay} onMouseLeave={this.onLeave} >
-                                            <source src={video.music_video} type="video/mp4" />
-                                        </video>
-                                    </Link>
-                                    <div className="video-info">
-                                        <div className="video-info-separator">
-                                            <div className="video-info-title">Song: <span className="video-info-value">{video.title}</span></div>
-                                            <div className="video-info-title">Year: <span className="video-info-value">{video.year}</span></div>
-                                        </div>
-                                        <div className="video-info-title">Artist: <span className="video-info-value">{video.artist}</span></div>
-                                    </div> */}
                                 </div>
                             )
                     })}

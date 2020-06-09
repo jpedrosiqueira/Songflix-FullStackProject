@@ -27,7 +27,6 @@ class MyListIndex extends React.Component {
 
     render() {
         const { videos } = this.props;
-        // debugger
         let allVideos = videos.map((video, key) => {
             return (
                 <VideoItemContainer video={video} key={key} />

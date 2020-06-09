@@ -31,7 +31,6 @@ class Rock extends React.Component {
         const { videos } = this.props;
 
 
-        // debugger
         if (videos === undefined) {
             return null
         }

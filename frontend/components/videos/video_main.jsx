@@ -77,7 +77,7 @@ class VideoMain extends React.Component {
         const mainVideo = videos.map((video, idx) => {
             if (video.title === "The less I know the better") {
             return (
-                <div>
+                <div key="idx">
                     <div className="main-video-box" key={idx}>
                         <p className="main-video-title">{video.title}</p>
                         <p className="main-video-details">Artist: {video.artist}</p>

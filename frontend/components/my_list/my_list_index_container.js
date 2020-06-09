@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import MyListIndex from "./my_list_index";
 import { fetchMyListItems, clearVideos } from "../../actions/video_actions";
+import { withRouter } from "react-router-dom";
 
 const mapStateToProps = (state, ownProps) => {
     const users = state.entities.users
@@ -21,4 +22,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MyListIndex)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MyListIndex));
