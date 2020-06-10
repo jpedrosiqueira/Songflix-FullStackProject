@@ -96,3 +96,19 @@
              )
 ```
 
+# Challenges faced and how it was fixed
+
+## Explaining the problem
+* One of the features for this project is the ability of adding music videos to your list, that way users can see all their favorite videos on that page. 
+* The issue faced was that the videos weren't automatically disappearing whenever the user clicked on the "remove from my list" button for a specific video, so it would only disappear upon a page refresh. 
+
+## Solving the problem
+* It was noticed that the videos removed from the list were being updated in the backend, but not in the frontend. That means that the list of videos on backend wasn't matching all videos contained on the frontend state after the action was called.
+* So, after checking the video reducer, 
+
+```javascript
+        case RECEIVE_MY_LIST_ITEMS:
+            let newState = Object.assign({}, state);
+            newState[Object.keys(newState)[0]].listVideoIds = action.videos.listVideoIds;
+            return newState;
+```

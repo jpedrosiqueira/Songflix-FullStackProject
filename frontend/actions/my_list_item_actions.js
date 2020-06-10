@@ -16,5 +16,7 @@ export const addToMyList = (videoId) => (dispatch) => {
 
 export const removeFromMyList = (videoId) => (dispatch) => {
     return MyListItemApiUtil.removeFromMyList(videoId)
-    .then((videos) => dispatch(receiveMyListItems(videos)))
+    .then((videos) => {
+        dispatch(receiveMyListItems(videos))
+    })
 };

@@ -6,9 +6,9 @@ class VideoItem extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            numVideos: 0,
-        }
+        // this.state = {
+        //     numVideos: 0,
+        // }
 
         this.handleList = this.handleList.bind(this);
     
@@ -22,12 +22,14 @@ class VideoItem extends React.Component {
             e.preventDefault();
             if (onlist) {
                 removeFromMyList(video.id);
-                if (this.props.location.pathname.startsWith("/mylist")) {
-                    // this.props.history.push(`mylist`);
-                    this.setState({
-                        numVideos: this.state.numVideos -1
-                    })
-                }
+                
+
+                // if (this.props.location.pathname.startsWith("/mylist")) {
+                //     // this.props.history.push(`mylist`);
+                //     this.setState({
+                //         numVideos: this.state.numVideos -1
+                //     })
+                // }
 
             } else {
                 addToMyList(video.id)
@@ -50,7 +52,7 @@ class VideoItem extends React.Component {
     render() {
         const { key, video, onlist } = this.props;
         const listButton = onlist ? <i className="fas fa-check"></i> : <i className="fas fa-plus"></i>;
-
+        
         return (
             <div key={key}>
 

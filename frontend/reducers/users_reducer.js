@@ -10,6 +10,11 @@ const usersReducer = (state = {}, action) => {
         case RECEIVE_MY_LIST_ITEMS:
             let newState = Object.assign({}, state);
             newState[Object.keys(newState)[0]].listVideoIds = action.videos.listVideoIds;
+            // for (let key in newState) {
+            //     if (!action.videos.listVideoIds.includes(parseInt(key))) {
+            //         delete newState[key];
+            //     }
+            // }
             return newState;
         default:
             return state;
