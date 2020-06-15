@@ -1,4 +1,4 @@
-# README
+# Songflix
 
 * Songflix is a clone of one of the biggest streaming service web app Neflix, except that the user can watch music videos and concerts, as opposed to movies and TV shows.
 
@@ -96,7 +96,7 @@
              )
 ```
 
-# Challenges faced and how it was fixed
+<!-- # Challenges faced and how it was fixed
 
 ## Explaining the problem
 * One of the features for this project is the ability of adding music videos to your list, that way users can see all their favorite videos on that page. 
@@ -111,4 +111,4 @@
             let newState = Object.assign({}, state);
             newState[Object.keys(newState)[0]].listVideoIds = action.videos.listVideoIds;
             return newState;
-```
+``` -->
