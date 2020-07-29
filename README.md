@@ -7,7 +7,7 @@
   
 # Technologies       
 * This web app was made using PostgreSQL to handle the backend database, Ruby on Rails for the backend, React/Redux for the frontend, CSS3 for styling, and Amazon AWS S3 to store images and videos. The website was deployed using Heroku.      
-    
+     
 # MVPs 
 * Displaying videos and hovering over them
 * Search Bar 
