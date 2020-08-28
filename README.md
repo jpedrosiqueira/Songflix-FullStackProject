@@ -1,6 +1,6 @@
 # Songflix
 
-* Songflix is a clone of one of the biggest streaming service web app Netflix, except that the user can watch music videos and concerts, as opposed to movies and TV shows.    
+* Songflix is a Netflix inspired single-page web app where users can watch music videos, browse genres, and create personalized playlists   
  
 # Live site demo
 * Demo: [Link](https://songflix.herokuapp.com/#/)
