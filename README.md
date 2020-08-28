@@ -1,6 +1,6 @@
 # Songflix
 
-* Songflix is a Netflix inspired single-page web app where users can watch music videos, browse genres, and create personalized playlists   
+* Songflix is a Netflix inspired single-page web app where users can watch music videos, browse genres, and create personalized playlists    
  
 # Live site demo
 * Demo: [Link](https://songflix.herokuapp.com/#/)
