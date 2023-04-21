@@ -1,0 +1,127 @@
+
+.row-videos {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-rock-videos {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    overflow: auto;
+}
+
+.row-pop-videos {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.row-alternative-videos {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    overflow: auto;
+}
+
+.video-info {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.genre-title {
+    margin: 5px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 800;
+    border-width: 5px;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.genre-title-row {
+    margin: 5px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 800;
+    border-width: 5px;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.video-hover {
+    /* overflow: hidden; */
+    display: flex;
+    width: 270px;
+    height: 180px;
+    margin-right: 15px;
+    transition: transform .2s;
+    position: relative;
+}
+
+.video-hover:hover {
+    transform: scale(1.25);
+    z-index: 100;
+}
+
+.list-index-button {
+    margin-left: 222px;
+    margin-top: -61px;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(133, 133, 133, 0.6);
+    border-radius: 50%;
+    border: 1.8px solid white;
+    position: absolute;
+    /* display: none; */
+    visibility: hidden;
+    z-index: 102;
+}
+
+
+.video-info-title {
+    font-weight: bold;
+}
+
+.video-info-value {
+    font-weight: normal;
+}
+
+.video-info-separator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 38px;
+}
+
+.grid-container-search {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-container {
+    margin-left: 1rem;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+
+
+.video-item-container {
+    position: relative;
+}
+
+.video-item-container:hover > .list-index-button {
+    visibility: visible;
+}

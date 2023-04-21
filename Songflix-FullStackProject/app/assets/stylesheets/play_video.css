@@ -1,0 +1,31 @@
+.back-to-browse {
+    position: absolute;
+    padding: 10px;
+    z-index: 888;
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.back-to-browse:hover {
+    cursor: pointer;
+}
+
+.back-to-browse-message {
+    display: none;
+}
+
+.back-to-browse-icon {
+    font-size: 40px;
+    display: flex;
+}
+
+.back-to-browse-icon:hover > .back-to-browse-message {
+    display: flex;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 10px;
+}
+

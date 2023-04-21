@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Songflix</title>
+      <meta property="og:title" content="Songflix">
+      <meta property="og:image:url" content="https://i.imgur.com/4BPazUs.png">
+      <meta property="og:description" content="Songflix is a Netflix inspired single-page web app where users can watch music videos, browse genres, and create personalized playlists." />
+      <meta property="og:url" content="https://songflix.herokuapp.com/#/">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="https://i.imgur.com/NhUDCQ7.png?1">
+    <script src="https://kit.fontawesome.com/b1d719111a.js" crossorigin="anonymous" SameSite="None Secure"></script>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
